@@ -4,3 +4,6 @@ __pycache__/
 *.zip
 *.parquet
 *.png
+*.pth
+dataset_sorted/
+dataset_v2/

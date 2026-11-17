@@ -13,6 +13,7 @@ def is_valid_dicom(dataset):
 def extract_metadata(dataset, filepath):
     return {
         "zip_path": filepath,
+        "study_uid": str(dataset.get("StudyInstanceUID", "")),
         "patient_id": str(dataset.get("PatientID", "")),
         "series_uid": str(dataset.get("SeriesInstanceUID", "")),
         "series_desc": str(dataset.get("SeriesDescription", "")).lower().strip(),
