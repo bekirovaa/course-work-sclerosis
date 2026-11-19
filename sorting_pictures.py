@@ -101,9 +101,9 @@ def main():
             total_saved += saved
             
             if total_saved % 50 == 0 and total_saved > 0:
-                print(f"Обработано срезов: {total_saved}...")
+                print(f"Обработано срезов: {total_saved}")
 
-    print(f"\nГотово! Сохранено {total_saved} срезов в папку '{OUTPUT_DIRECTORY}'")
+    print(f"\nСохранено {total_saved} срезов в папку '{OUTPUT_DIRECTORY}'")
 
 if __name__ == "__main__":
     main()
